@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 500;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.justify-end{
+  display: flex;
+  justify-content: end;
+}
+
+.special-color{
+  color: #f85555;
+}
+
+.navbar {
+  z-index: 10 !important;
+}
+
+.nav-mobile{
+  display: none !important;
+}
+
+.container-style {
+  /* background-color: seagreen; */
+  margin-top: 30px;
+  min-height: calc(100vh - 91.88px);
+}
+
+.label-filter {
+  font-weight: bold;
+}
+
+.input-filter {
+  max-width: 100%;
+  padding: 0 0.4rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn-filter {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: steelblue;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.input-container--search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-search {
+  border: 1px solid #dcd9d9;
+  height: 48px;
+  width: 100%;
+  max-width: 406px;
+  padding: 0 1rem;
+  
+}
+
+.input-search:focus-visible {
+  outline: none;
+}
+
+.no-found{
+  margin-top: 20px;
+}
+
+.input-price{
+  display: flex;
+  gap: 10px;
+}
+
+.btn-price{
+  border: none;
+  background-color: #f85555;
+  color: white;
+  padding: .3rem;
+  border-radius: 8px;
+}
+
+.card-product {
+  padding: 2rem;
+}
+
+.card-img-top {
+  /* padding: 25px 10px 0 10px;
+    margin-top: 25px; */
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card-images-container{
+  position: relative;
+}
+
+.card-images-container:hover > .card-image-1{
+  opacity: 0;
+}
+
+.card-image-2{
+  transition: all 1s ease;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.card-image-2:hover{
+  opacity: 1;
+}
+
+.center-card-flex {
+  height: 392px !important;
+  padding: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-shop {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1rem;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+/* PRODUCT DETAIL */
+
+.product-detail {
+  margin-top: 40px;
+}
+
+.image-slider {
+  margin: 0 auto;
+  height: 350px;
+  max-width: 420px;
+  object-fit: contain;
+}
+
+.section-detail {
+  margin-top: 75px;
+}
+
+.card-des-title {
+  margin-bottom: 20px;
+}
+
+.product-value {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-counter {
+  padding: 0.3rem 1rem;
+  border: none;
+}
+
+.counter {
+  border: 1px solid #919aa1;
+  padding: 0.3rem 1rem;
+}
+
+.btn-end {
+  background: #f85555;
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 50px 0;
+  padding: 15px;
+  width: 100%;
+  border: none;
+}
+
+.title-similar{
+  color: #f85555 !important;
+  font-weight: bold;
+}
+
+
+.auto-complete{
+  background-color: #919aa1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bx-filter-alt{
+  display: none;
+  cursor: pointer;
+}
+
+.filter-btn-container{
+  display: none;
+}
+
+@media screen AND (max-width: 350px) {
+  .card-title {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen AND (max-width: 535px) {
+  .bx-filter-alt{
+    display: inline-block;
+  }
+
+  .acordion-filter{
+    display: none;
+  }
+
+  .filter-btn-container{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .input-filter{
+    width: 75%;
+  }
+
+  .nav-mobile{
+    display: flex !important;
+    position: fixed !important;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+  
+  }
+
+  .btn-nav-mobile{
+    border-right: 2px solid rgba(51, 51, 51, 0.279) !important;
+  }
+
+  .btn-nav-mobile--rigth{
+    border-right: none !important;
+  }
+}

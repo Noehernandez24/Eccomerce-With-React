@@ -1,0 +1,42 @@
+.purcharses{
+    min-height: calc(100vh - 91.88px);
+    margin-top: 50px;
+}
+
+.purcharses___container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.purcharses__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.purcharses__img{
+    height: 60px;
+    object-fit: contain;
+}
+
+.purcharses__date{
+    color: #C7C7C7;
+    font-size: .9rem;
+}
+
+.purcharses__quantity{
+    border: 1px solid #C7C7C7;
+    padding: .5rem 1.5rem;
+}
+
+@media screen AND (max-width: 700px) {
+    .purcharses__card{
+        gap: 10px;
+        border: 1px solid #C7C7C7;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+}

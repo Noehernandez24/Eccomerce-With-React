@@ -1,0 +1,40 @@
+.login-container{
+    min-height: calc(100vh - 91.88px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card{
+    border: 1px solid #dcd9d9;
+    width: 98%;
+    max-width: 400px;
+    padding: 1.6rem;
+}
+
+.login-title{
+    text-transform: unset;
+    text-align: center;
+}
+
+.test-data{
+    margin: 15px 0;
+    background-color: #d8f5fd;
+    color: black;
+    padding: 1.5rem;
+}
+
+.test-title{
+    text-align: center;
+    text-transform: unset;
+}
+
+.data-items{
+    display: flex;
+    gap: 10px;
+}
+
+.login-card > span{
+    display: inline-block;
+    margin-top: 15px;
+}

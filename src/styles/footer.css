@@ -1,0 +1,27 @@
+.footer{
+    background-color: rgb(52,58,64);
+    height: 220px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon{
+    background-color: #50504f;
+    color: white;
+    padding: .4rem;
+    border-radius: 50%;
+}
+
+.social-icon:hover{
+    box-shadow: 0 0 12px  #fff;
+}
