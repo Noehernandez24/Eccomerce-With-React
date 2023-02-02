@@ -5,6 +5,7 @@ import { Button, Container, Form } from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
 import { useDispatch } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
 import { setIsLoading } from '../store/slices/isLoading.slice'
 import '../styles/login.css'
 
@@ -23,7 +24,14 @@ const Login = () => {
       })
       .catch(error => {
         if (error.response.status === 401) {
-          alert('credenciales incorrectas')
+          Swal.fire(
+            {
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Incorrect credentials',
+              confirmButtonColor: '#f85555'
+            }
+          )
         }
       })
       .finally(() => dispatch(setIsLoading(false)))
