@@ -42,13 +42,15 @@ const AppNavBar = () => {
               <Nav.Link as={Link} to='/purcharses'>
                 Purcharses
               </Nav.Link>
-              <Nav.Link as={Link} to='/user'>
-                <i className='bx bx-user' />
-              </Nav.Link>
-              <Nav.Link className='cart-icon-contaniner' onClick={handleShow}>
-                <i className='bx bx-cart-alt' />{' '}
-                <span className='cart-length'>{cartProducts.length}</span>
-              </Nav.Link>
+              <div className='cart-links'>
+                <Nav.Link as={Link} to='/user'>
+                  <i className='bx bx-user' />
+                </Nav.Link>
+                <Nav.Link className='cart-icon-contaniner' onClick={handleShow}>
+                  <i className='bx bx-cart-alt' />{' '}
+                  <span className='cart-length'>{cartProducts.length}</span>
+                </Nav.Link>
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -62,6 +64,7 @@ const AppNavBar = () => {
           variant='primary'
         >
           <i className='bx bx-cart-alt bx-sm' />
+          <span className='cart-length--mobile'>{cartProducts.length}</span>
         </Button>
         <Button
           onClick={() => navigateAndScroll('purcharses')}
@@ -71,12 +74,14 @@ const AppNavBar = () => {
           <i className='bx bx-box bx-sm' />
         </Button>
         <Button
-          onClick={() => navigateAndScroll('login')}
+          onClick={() => navigateAndScroll('user')}
           className='btn-nav-mobile btn-nav-mobile--rigth'
           variant='primary'
         >
+
           <i className='bx bx-user bx-sm' />
         </Button>
+
       </ButtonGroup>
 
       <Cart show={show} handleClose={handleClose} />

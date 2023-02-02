@@ -277,7 +277,9 @@
   .input-filter{
     width: 75%;
   }
+}
 
+@media screen AND (max-width: 767px) {
   .nav-mobile{
     display: flex !important;
     position: fixed !important;
@@ -295,5 +297,11 @@
   .btn-nav-mobile--rigth{
     border-right: none !important;
   }
+
+  .cart-links{
+    display: none !important;
+  }
+
+  
 }
 

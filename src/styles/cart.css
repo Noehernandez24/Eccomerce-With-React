@@ -93,9 +93,24 @@
     right: -5px;
 }
 
+.cart-length--mobile{
+    display: none;
+    color: #f85555;
+}
+
+.cart-links{
+    display: flex;
+}
+
 @media screen AND (max-width: 425px) {
     .cart-title{
         font-size: .9rem;
+    }
+}
+
+@media screen AND (max-width: 767px) {
+    .cart-length--mobile{
+        display: inline-block;
     }
 }
 
