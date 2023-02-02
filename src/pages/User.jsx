@@ -6,7 +6,7 @@ import '../styles/user.css'
 const User = () => {
   const [userName, setUserName] = useState('Anonimo')
   const navigate = useNavigate()
-  const avatarUserName = `https://ui-avatars.com/api/?name=${userName}&background=f85555&color=fff`
+  const avatarUserName = `https://ui-avatars.com/api/?name=${userName.split(' ').join('+')}&background=f85555&color=fff`
 
   const logout = () => {
     localStorage.setItem('token', '')
