@@ -6,6 +6,7 @@ import '../styles/user.css'
 const User = () => {
   const [userName, setUserName] = useState('Anonimo')
   const navigate = useNavigate()
+  const avatarUserName = `https://ui-avatars.com/api/?name=${userName}&background=f85555&color=fff`
 
   const logout = () => {
     localStorage.setItem('token', '')
@@ -23,7 +24,7 @@ const User = () => {
     <main className='user-container'>
       <div className='user'>
         <div className='user-avatar'>
-          <i className='bx bx-user-circle' />
+          <img src={avatarUserName} className='user-img' />
         </div>
         <h3 className='user-name'>{userName}</h3>
         <span onClick={logout} className='user-logut'>Logut</span>

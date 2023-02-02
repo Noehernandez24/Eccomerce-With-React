@@ -22,6 +22,11 @@
     border-radius: 50%;
 }
 
+.user-img{
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
 .user-name{
     text-transform: unset;
 }
