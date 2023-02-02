@@ -7,26 +7,45 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
 .purcharses__card{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.card-image-container{
+    height: 60px;
+    width: 100px;
 }
 
 .purcharses__img{
-    height: 60px;
+    height: 100%;
+    width: 100%;
     object-fit: contain;
+}
+
+.purcharses__name{
+    width: 259px;
+    padding: .9rem;
 }
 
 .purcharses__date{
     color: #C7C7C7;
     font-size: .9rem;
+    padding: 1rem;
 }
 
-.purcharses__quantity{
+.purcharses__total{
+    padding: 1rem;
+}
+
+.quantity-container{
     border: 1px solid #C7C7C7;
     padding: .5rem 1.5rem;
 }
@@ -38,5 +57,9 @@
         flex-direction: column;
         padding: 1rem;
         border-radius: 8px;
+    }
+
+    .purcharses__name{
+        width: inherit
     }
 }
